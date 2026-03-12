@@ -3,6 +3,18 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Project-specific
+data/raw/
+data/processed/
+outputs/
+checkpoints/
+*.pt
+*.pth
+*.csv
+*.gz
+*.zip
+*.tar
+
 # C extensions
 *.so
 
