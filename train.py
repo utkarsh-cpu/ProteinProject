@@ -151,7 +151,7 @@ def main():
     plot_training_curves(history, output_dir=plot_dir)
 
     logger.info("Training complete. Outputs saved to %s", args.output_dir)
-    logger.info("To evaluate, run: python evaluate.py --output_dir %s", args.output_dir)
+    logger.info("To evaluate the trained model, run: python evaluate.py --output_dir %s", args.output_dir)
 
 
 if __name__ == "__main__":

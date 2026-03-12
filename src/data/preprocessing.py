@@ -165,9 +165,6 @@ class ProteinPreprocessor:
 
         preprocessor = cls(max_seq_len=config["max_seq_len"])
         preprocessor.aa_to_idx = config["aa_to_idx"]
-        preprocessor.idx_to_aa = {int(k): v for k, v in
-                                   {v: k for k, v in config["aa_to_idx"].items()}.items()
-                                   if True}
         preprocessor.idx_to_aa = {i: aa for aa, i in preprocessor.aa_to_idx.items()}
         preprocessor.sst8_to_idx = config["sst8_to_idx"]
         preprocessor.idx_to_sst8 = {int(v): k for k, v in config["sst8_to_idx"].items()}
